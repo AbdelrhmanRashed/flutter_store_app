@@ -22,7 +22,7 @@ class _CategoriesTabsState extends State<CategoriesTabs> {
         scrollDirection: Axis.horizontal,
         itemCount: widget.categories.length,
         separatorBuilder: (_, _) => const SizedBox(width: 8),
-        itemBuilder: (context, index) {
+        itemBuilder: (_, index) {
           return ChoiceChip(
             label: Text(widget.categories[index]),
             selected: selectedIndex == index,

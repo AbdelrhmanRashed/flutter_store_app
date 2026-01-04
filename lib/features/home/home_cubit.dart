@@ -21,12 +21,10 @@ class HomeCubit extends Cubit<HomeState> {
       final productsResponse = responses[0];
       final categoriesResponse = responses[1];
 
-      if (productsResponse.statusCode == 200 &&
-              categoriesResponse.statusCode == 200 ||
-          productsResponse.statusCode == 201 &&
-              categoriesResponse.statusCode == 201) {
-
-
+      if ((productsResponse.statusCode == 200 &&
+              categoriesResponse.statusCode == 200) ||
+          (productsResponse.statusCode == 201 &&
+              categoriesResponse.statusCode == 201)) {
         final products = (productsResponse.data as List)
             .map((product) => ProductsModel.fromJson(product))
             .toList();

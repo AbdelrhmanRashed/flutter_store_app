@@ -2,7 +2,6 @@ import 'package:animated_snack_bar/animated_snack_bar.dart';
 import 'package:app3/core/resources/app_button.dart';
 import 'package:app3/core/resources/app_colors.dart';
 import 'package:app3/core/resources/app_icons.dart';
-import 'package:app3/core/resources/app_images.dart';
 import 'package:app3/core/resources/app_loader.dart';
 import 'package:app3/core/resources/snack_bar.dart';
 import 'package:app3/features/details/details_cubit.dart';
@@ -21,6 +20,7 @@ class DetailsScreen extends StatelessWidget {
       child: Scaffold(
         backgroundColor: Colors.white,
         appBar: AppBar(
+          surfaceTintColor: Colors.white,
           backgroundColor: Colors.white,
           elevation: 0,
           title: const Text("Details", style: TextStyle(color: AppColors.textColor)),

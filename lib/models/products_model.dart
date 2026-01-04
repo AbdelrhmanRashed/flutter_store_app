@@ -11,9 +11,7 @@ class ProductsModel {
     this.title,
     this.price,
     this.description,
-
     this.category,
-
     this.image,
   });
 

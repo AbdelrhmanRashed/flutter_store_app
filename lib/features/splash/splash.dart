@@ -1,7 +1,6 @@
 import 'package:app3/core/resources/app_json.dart';
 import 'package:app3/core/resources/cache_helper.dart';
 import 'package:app3/features/auth/login/login_screen.dart';
-import 'package:app3/features/home/home_screen.dart';
 import 'package:app3/features/home_navigation/view.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
