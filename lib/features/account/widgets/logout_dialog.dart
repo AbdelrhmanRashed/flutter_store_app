@@ -11,21 +11,21 @@ class LogoutDialog extends StatelessWidget {
     return AlertDialog(
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
       backgroundColor: Colors.white,
-      contentPadding: const EdgeInsets.all(24),
+      contentPadding:  EdgeInsets.all(24),
       content: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
           Container(
-            padding: const EdgeInsets.all(12),
+            padding: EdgeInsets.all(12),
             decoration: BoxDecoration(
-              color: const Color(0xffFBCFCF),
+              color:  Color(0xffFBCFCF),
               shape: BoxShape.circle,
               border: Border.all(color: Color(0xffED1010), width: 5),
             ),
-            child: const Icon(Icons.priority_high, color: Colors.red, size: 30),
+            child:  Icon(Icons.priority_high, color: Colors.red, size: 30),
           ),
-          const SizedBox(height: 20),
-          const Text(
+           SizedBox(height: 20),
+           Text(
             "Logout?",
             style: TextStyle(
               fontSize: 20,
@@ -33,20 +33,20 @@ class LogoutDialog extends StatelessWidget {
               color: AppColors.textColor,
             ),
           ),
-          const SizedBox(height: 8),
-          const Text(
+           SizedBox(height: 8),
+           Text(
             "Are you sure you want to logout?",
             textAlign: TextAlign.center,
             style: TextStyle(color: AppColors.hintColor, fontSize: 16),
           ),
-          const SizedBox(height: 24),
+           SizedBox(height: 24),
           SizedBox(
             width: double.infinity,
             height: 54,
             child: ElevatedButton(
               onPressed: () {
                 CacheHelper.deleteToken().then(
-                  (_) => Navigator.of(context).pushReplacement(
+                  (value) => Navigator.of(context).pushReplacement(
                     MaterialPageRoute(builder: (context) => LoginScreen()),
                   ),
                 );
